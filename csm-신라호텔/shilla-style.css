@@ -1,0 +1,277 @@
+@charset "UTF-8" ;
+@import url(reset.css);
+
+* {margin: 0;padding: 0;}
+html,body{font-size: 12px;}
+h1,h2,h3,h4,h5,h6{font-size: 100%;}
+ol,ul{list-style: none;}
+a{text-decoration: none; color: inherit;  display: block;}
+span{
+  display: inline-block;
+}
+img{display: block;}
+address{font-style: normal;}
+table{border-collapse: collapse;}
+button{border: none;
+        background: transparent;}
+
+#wrap{
+  width: 100%;
+  min-width: 1100px;
+}
+.boxalign{
+  width: 1100px;
+  margin: auto;
+}
+
+/* HEADR */
+header{
+  background: #f5f2de;
+  padding: 0.7rem 0;
+}
+header .boxalign{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+header .logo{
+}
+header .logo h1{
+  padding: 1.2rem 0;
+}
+header .logo h1 a{
+}
+header .logo h1 a img{
+  width: 200px;
+  
+}
+
+header nav{
+  display: flex;
+  gap: 5rem ;
+}
+header nav div{
+  border-bottom: 4px solid transparent;
+  padding-bottom: 1rem;
+}
+header nav div a{
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 1rem 0 1rem;
+}
+header nav div:hover{
+  color:#4a433b;
+  border-bottom: 4px solid ;
+  
+}
+header ul{
+  display: flex;
+  gap: 12px;
+  font-size: 0.5rem
+}
+header ul li{
+  border-bottom: 6px solid transparent;
+}
+header ul li:hover{
+  color:#4a433b;
+  border-bottom: 2px solid;
+  padding-bottom: 0.3rem;
+}
+
+/* MAIN */
+main{
+  position: relative;
+  overflow: hidden;
+  transition: .7s;
+}
+main .mbg{
+  background:url("/메인호텔이미지.jpg")  center;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  transition: .7s;
+}
+main:hover .mbg{
+  transform: scale(1.2);
+}
+main .mtext{
+  position: absolute;
+  background: #000000a8;
+  top: 0;
+  bottom: 0;
+  right: 20%;
+  color: #ffff;
+  padding: 3rem;
+  transition: .7s;
+}
+
+main .mtext:hover{
+  right: 25%;
+  padding: 3.5rem;
+}
+
+main .mtext h2{
+  font-size: 3rem;
+  transition: .7s;
+  padding-top: 4rem;
+}
+main .mtext span{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  margin: 2rem 0;
+  border-radius: 50%;
+  transition: .7s;
+ }
+main:hover .mtext span{
+  background-color: #ffff;
+  width: 50px;
+  border-radius: 0;
+  height: 4px;
+  
+}
+main .mtext p{
+  font-size: 1.3rem;
+  margin-bottom: 10rem;
+  line-height: 1.6;
+  padding-top: 1.5rem;
+ 
+}
+main .mtext a{
+  display: inline-block;
+  padding: 1rem;
+  border: 1px solid ;
+  font-size: 1.2rem;
+}
+main .mtext a:hover{
+  background-color: #fff;
+  color: #000000;
+}
+
+
+/* SECTION */
+section{
+  padding: 5rem 0 ;
+}
+
+section ul{
+  display: flex;
+  gap: 25px;
+}
+section ul li{
+  width: 350px;
+}
+section ul li:first-child{
+  background: #f5f2de;
+  height: 350px;
+  padding: 30px;
+  width: 290px;
+}
+section ul li h3{
+  font-size: 1.9rem;
+}
+section ul li > span{
+  display: block;
+  width: 1px;
+  height: 100px;
+  background: #000;
+  margin: 2rem 1rem;
+
+}
+section ul li p{
+  font-size: 1.2rem;
+  letter-spacing: -1.5px;
+  line-height: 1.5;
+}
+
+section ul li a{
+  display: block;
+}
+section ul li a span{
+  display: block;
+}
+.imgbox img{
+  width: 100%;
+}
+section ul li a span.textbox{
+  background: #4a433b;
+  padding: 30px;
+  transition: .5s;
+  border-top:1px solid #ffff;
+}
+section ul li a span.textbox{
+  border-bottom: #f5f2de;
+}
+.textbox strong{
+  display: block;
+  font-size: 1.4rem;
+  letter-spacing: -1px;
+  color: #fff;
+}
+.textbox .whycover{
+  display: flex;
+  margin-top: 5.3rem;
+}
+.whycover .wcbg{
+  background: url(/버튼_링크\(갈색\).png);
+  width: 20px;
+  height: 20px;
+  background-size: 40px;
+  transition: .5s;
+}
+.whycover i{
+  display: block;
+  font-style: normal;
+  margin-left: 1rem;
+  color: #fff;
+}
+section li:hover .wcbg{
+  background-position: right;
+}
+section li:hover .textbox{
+  border-bottom-color: #f5f2de;
+}
+section li:hover .wcbg{
+  background-position: right;
+}
+section li:hover .textbox{
+  border-bottom-color: #f5f2de;
+}
+/* FOOTER */
+footer .logo{}
+footer .logo h1{
+  padding: 0.5rem 1;
+}
+footer .logo h1 a{}
+footer .logo h1 a img{
+  width: 185px;
+}
+footer{
+  background: #f5f2de;
+  padding: 1rem 0;
+  border-top: 0.5px solid #000;
+}
+footer .boxalign{
+  display: flex;
+  align-items: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 5rem;
+}
+footer ul{
+  display: flex;
+  width: 750px;
+  margin: auto;
+  gap: 2rem;
+  padding-left: 5rem;
+}
+footer ul li a{
+  display: block;
+  font-size: 1.1rem;
+}
+footer address{
+  text-align: center;
+  margin-top: 1.5rem;
+  padding-top: 0.5rem;
+}
